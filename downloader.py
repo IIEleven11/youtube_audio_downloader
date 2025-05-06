@@ -133,7 +133,7 @@ def download_audio(url, max_hours, sample_rate, channels):
         '--paths', 'downloaded_audio',
         '--output', output_template,
         '--postprocessor-args', f'ffmpeg:-ar {sample_rate} -ac {audio_channels}',
-        '--max-filesize', '100M',  # Limit file size to 100MB for testing
+        '--max-filesize', '1000M',  # Limit file size to 100MB for testing
         '--socket-timeout', '30',  # 30 seconds timeout
     ]
 
